@@ -4,10 +4,12 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
-.header {
-  width: 500px;
-  margin: 0 auto;
+.section {
   display: block;
+  width: 500px;
+  margin: 0 auto 0;
+}
+.header {
   text-align: right;
 }
 .header .header-img {
@@ -22,11 +24,6 @@
     text-align: center;
   }
 }
-.main-page {
-  display: block;
-  width: 500px;
-  margin: 0 auto 0;
-}
 .task-label,
 .task-input {
   width: 56%;
@@ -35,6 +32,7 @@
 }
 .task-row-wrapper {
   display: flex;
+  margin-top: 20px;
 }
 .task-list {
   margin: 0;
@@ -61,8 +59,7 @@
   color: #3a3a3a;
 }
 /* Heading */
-.section-title,
-.new-task-label {
+.section-title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -88,10 +85,6 @@
 }
 
 /* New Task */
-.new-task-label {
-  display: block;
-  margin: 0 0 20px;
-}
 #new-task {
   width: 318px;
 }
@@ -149,4 +142,17 @@
 
 .task-list .edit-mode .task-label {
   display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
